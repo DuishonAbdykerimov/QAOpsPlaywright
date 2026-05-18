@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Test artifacts
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# System files
+.DS_Store
+.env
+*.log
+
+# Temporary files
+*.png
+*.jpg
+*.jpeg
+partialScreenshot.png
+screenshot.png
+
+# Config backups
+playwright.config1.js
+*.service.config.js
+
+# Extra projects
+ExcelJSUtil/
+
+# Azure
+.azure/

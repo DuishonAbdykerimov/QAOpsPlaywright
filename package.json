@@ -1,0 +1,35 @@
+{
+  "name": "playwwrightautomation",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "regression": "npx playwright test",
+    "WebTests": "npx playwright test --grep @Web",
+    "APITests": "npx playwright test --grep @API",
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari",
+    "smoke": "npx playwright test --grep @smoke",
+    "headed": "npx playwright test --headed",
+    "allure:clean": "allure generate ./allure-results --clean",
+    "allure:open": "allure open ./allure-report"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1",
+    "playwright-core": "^1.59.1",
+    "undici-types": "^7.18.2"
+  },
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.5",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.5.2",
+    "allure-playwright": "^3.8.0"
+  }
+}
